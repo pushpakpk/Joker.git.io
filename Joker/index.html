@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Joker</title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="logo.png"></a>
+		<div class="toggle"><img src="toggle.png"></div>
+	</header>
+	<div class="banner">
+		<div class="content">
+			<h2>Put on a <span>Happy</span> face</h2>
+			<p>The pain itself is important, but the pain is enhanced by the adipiscing process, but I give it some time to cut it down so that I do some great pain and sorrow. In order for the least to come, what of ours to exercise any school of employment except to achieve the objectives from that comma.</p>
+			<div class="trailer">
+			<a href="trailer.mp4" class="play" onclick="toggle()"><img src="play.png">Watch Trailer</a>
+			
+			</div>
+			<div class="slide"></div>
+			<ul class="sci">
+				<li><a href="#"><img src="facebook.png"></a></li>
+				<li><a href="#"><img src="twitter.png"></a></li>
+				<li><a href="#"><img src="instagram.png"></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript">
+		function toggle(){
+			var trailer = document.queryselector('.trailer');
+			var video = document.queryselector('video');
+			trailer.classList.toggle('active')
+			video.currentTime = 0;
+			video.pause();
+
+		}
+	</script>
+	
+
+</body>
+</html>
